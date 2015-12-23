@@ -1,0 +1,8 @@
+GenerateTree 
+	for symbols in the padding of the dominant symble
+		if isSuperscript(symbol)
+			dominant.superscript = GenerateTree(symbol)
+		else if isSubscript(symbol)
+			dominant.subscript = GenerateTree(symbol)
+		else
+			dominant.right = GenerateTree(symbol)

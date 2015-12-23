@@ -1,0 +1,46 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\title{EECS 445 Project Report: \\
+	\LaTeX Transformer}
+\author{Chang Liu, Haitian Sun, Kaiwei Wang, Xinghai Zhang\\
+	\texttt{\{wangkw\}@umich.edu}
+}
+	
+\begin{document}
+\maketitle
+\section{Introduction}
+Nowadays, math formulae in pdf format are widely used and spread across internet. People often find themselves in need of typing and reproducing the formulae in \LaTeX format for their own use. The barrier is, content with complex math formulae can be tedious to typeset, thus reducing overall efficiency. Our goal of this project is to develop an application that can translate image/pdf of standardized math formulae into corresponding \LaTeX code.
+\section{Proposed Method}
+\[ +-\times * \sum \prod \int . = ; : ! > < / ( ) [] \{ \} \infty  \]
+\[ \alpha \epsilon \theta \lambda \pi \sigma \phi \omega \]
+\[ 1234567890abcdef9^{bhlmno_{pqr5tuDwx_{9z}}} \]
+
+\begin{align*}
+3x^2 \in R \subset Q \\
+\mathnormal{3x^2 \in R \subset Q} \\
+\mathrm{3x^2 \in R \subset Q} \\
+\mathit{3x^2 \in R \subset Q} \\
+\mathnormal{  + \prod_{i=1}^\infty - \int = \in [\sum]\alpha \theta} \\
+\mathnormal{xp \quad gh \quad xq \quad gb \quad px \quad hg \quad bg \quad b_g \quad h_g \quad b_q} \\
+\mathnormal{a^{2}+\sum^{abcdefghik}_{k=1234567890}aaa\frac{\sum^{N}_{i=34}}{pq}} \\
+\mathit{0123456789\quad abcdefghikjlmnopqrstuvwxyz\quad ABCDEFGHIJKLMNOPQRSTUVWXYZ} \\
+\mathtt{ +-\times * \sum \prod \int . = ; : ! >  < / ( \cdot ) [] \{ \} \infty \in \subset}\\
+\mathtt{\alpha \epsilon \theta \lambda \pi \sigma \phi \omega}\\
+\mathtt{3x^2 \in R \subset Q} 
+\end{align*}
+
+
+\section{Related Work}
+\section{Experimental Results}
+\section{Future Milestone}
+\section{Conclusion}
+\section*{Author Contributions}
+
+\bibliography{bibfile} % put your bibtex file here
+\bibliographystyle{abbrv}
+
+\end{document}
